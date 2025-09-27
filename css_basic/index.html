@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My First Portfolio — Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Tiny bit of unobtrusive styling to keep it “simple and valid” */
+    :root { --ink:#222; --muted:#666; --accent:#0b5cff; --bg:#fff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--ink); background:var(--bg); }
+    header { border-bottom:1px solid #eee; }
+    header nav ul { list-style:none; display:flex; gap:1rem; margin:0; padding:0.75rem 1rem; }
+    header nav a { color:var(--accent); text-decoration:none; }
+    header nav a:focus, header nav a:hover { text-decoration:underline; }
+    main { display:grid; grid-template-columns: 1fr 280px; gap:2rem; padding:1.5rem; align-items:start; }
+    article img { max-width:100%; height:auto; border:1px solid #eee; border-radius:6px; }
+    table { border-collapse:collapse; width:100%; margin-top:1rem; }
+    thead th { text-align:left; background:#f7f7f7; }
+    th, td { border:1px solid #ddd; padding:0.5rem 0.6rem; }
+    aside { background:#f9fafb; border:1px solid #eee; border-radius:8px; padding:1rem; }
+    footer { border-top:1px solid #eee; padding:0.75rem 1rem; font-size:0.95rem; color:var(--muted); }
+    h1, h2, h3 { margin-top:0; }
+    @media (max-width: 800px) { main { grid-template-columns: 1fr; } }
+  </style>
+</head><meta charset="UTF-8">
+  <title>My Website</title>
+  <link href="base.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="tweets.html">Tweets</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1>Welcome to My First Portfolio</h1>
+      <h2>A Tiny, Valid HTML Website</h2>
+      <h3>Built with Semantic Tags</h3>
+
+      <p>This is my very first webpage in the project. It follows semantic HTML structure and passes the official validator ✔️.</p>
+      <p>You’ll find headings, paragraphs, a clickable image, and even a small table of learners below.</p>
+      <p>The navigation above lets you hop to my embedded tweet page. Explore and have fun!</p>
+      <p>As I grow this site, I’ll keep things accessible, responsive, and easy to read.</p>
+
+      <p>
+        <a href="https://www.alxafrica.com/" target="_blank" rel="noopener">
+          <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX logo linking to ALX Africa">
+        </a>
+      </p>
+
+      <!-- Learners table (before closing </article>) -->
+      <h2>Learners</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>25</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>Emily</td>
+            <td>28</td>
+            <td>Canada</td>
+          </tr>
+          <tr>
+            <td>Michael</td>
+            <td>32</td>
+            <td>Australia</td>
+          </tr>
+          <tr>
+            <td>Sophia</td>
+            <td>21</td>
+            <td>UK</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <aside>
+      <p>placeholder to add comment thread later</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Made by Adonteng Sarkodee - <a href="https://example.com" target="_blank" rel="noopener">here</a></p>
+  </footer>
+</body>
+</html>
